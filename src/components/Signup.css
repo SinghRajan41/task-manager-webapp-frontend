@@ -1,0 +1,104 @@
+.outer-container 
+{
+    border-style:solid;
+    border-color:green;
+    margin:0px;
+    padding:60px;
+    border-width:3px;
+    border-radius:15px;
+    position:relative;
+    top:20px;
+    height : 870px;
+    width : 1300px;
+    background-image:url('https://elements-cover-images-0.imgix.net/ea0990ce-ef84-4f13-b198-7eb7947cc823?auto=compress&crop=edges&fit=crop&fm=jpeg&h=630&w=1200&s=bdf4800b65c807cb3cfc9fbe42776c46');
+    background-size:cover;
+    background-position:center;
+    background-repeat : no-repeat;
+    
+}
+
+.outer-container:hover
+{
+    border-style:solid;
+    border-color:blue;
+    margin:0px;
+
+    padding:60px;
+    border-width:3px;
+    border-radius:15px;
+    position:relative;
+    top:20px;
+    height : 870px;
+    width : 1300px;
+    background-image:url('https://elements-cover-images-0.imgix.net/ea0990ce-ef84-4f13-b198-7eb7947cc823?auto=compress&crop=edges&fit=crop&fm=jpeg&h=630&w=1200&s=bdf4800b65c807cb3cfc9fbe42776c46');
+    background-position:center;
+    background-repeat : no-repeat;
+}
+.input-section
+{
+    border-style:solid;
+    border-color:green;
+    color:white;
+    display:flex;
+    justify-content: center;
+    background-color : rgba(88, 89, 90, 0.745);
+    border-radius:15px;
+}
+.input-section:hover
+{
+    border-style:solid;
+    color:white;
+    display:flex;
+    justify-content: center;
+    background-color : rgba(88, 89, 90, 0.93);
+    border-radius:15px;
+    border-color:blue;
+}
+.input-section h1 
+{
+    color:white;
+    font-size:50px;
+}
+
+.input-feilds:focus
+{
+    background-color:rgb(196, 218, 55);
+    color:green;
+}
+
+
+
+input[type="submit"] {
+    background-color: #3498db; 
+    color: #fff;
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  
+  input[type="submit"]:hover {
+    background-color: #2980b9;
+    border-color:blue;
+  }
+  
+ 
+  input[type="submit"]:active,
+  input[type="submit"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.8); 
+  }
+
+  .login-section 
+  {
+    color:rgb(17, 33, 30);
+    display:flex;
+    justify-content:center;
+    margin:50px;
+    font-size:20px;
+  }
+  
+
+
+
