@@ -49,8 +49,8 @@ function SignUp(props) {
             </tr>
             <br></br>
             <br></br>
-            <input type="submit" value="CREATE  USER" id = "submit-button" />
           </table>
+          <input type="submit" value="CREATE  USER" id = "submit-button" />
         </form>
 
       </div>

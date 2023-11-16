@@ -28,36 +28,35 @@ function Login(props) {
       });
   };
   return (
-    <div class = "container">
-      <form onSubmit={handleSubmit} id = "form1">
-        <h1 id = "heading1" > LOGIN FORM</h1>
-        <div class = "inputSection">
-          <label for="userId">
-            Username
-          </label>
-          <input
-            type="text"
-            id="userId"
-            onChange={(e) => setName(e.target.value)}
-            className="m-3"
-          />
-          <br />
-          <label for="pwd" >
-            Password
-          </label>
-          <input
-            type="password"
-            id="password"
-            onChange={(e) => setPassword(e.target.value)}
-            className="m-3"
-          />
-          <br />
-          <input type="submit" />
-        </div>
-        <div >
-          New here? Click <Link to="/">here</Link> to sign up
-        </div>
-      </form>
+    <div class="login-container">
+
+
+      <div class="login-input-section">
+        <form onSubmit={handleSubmit} id="form1">
+          <h1> LOGIN FORM</h1>
+          <br></br>
+          <table>
+            <tr>
+              <td><label for="userId">  Username  </label></td>
+              <td><input type="text" id="userId" onChange={(e) => setName(e.target.value)} class = "login-input-feilds" /></td>
+            </tr>
+            <tr>
+              <td><label for="pwd" >  Password  </label></td>
+              <td><input type="password" id="pwd" onChange={(e) => setPassword(e.target.value)} class = "login-input-feilds" /></td>
+            </tr>
+          </table>
+          <br></br>
+          <br></br>
+          <input type="submit" id="login-button" value="LOGIN" />
+        </form>
+      </div>
+
+
+      <div class = "signup-redirect">
+        New here? Click &nbsp;<Link to="/">here</Link> &nbsp;to sign up
+      </div>
+
+
     </div>
   );
 }
