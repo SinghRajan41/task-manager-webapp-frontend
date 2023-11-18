@@ -16,7 +16,7 @@ function App() {
     setUserId(newUserId);
   };
   return (
-    <div class="container">
+    <div class = "container">
       <HashRouter>
         <ShowNavBar>
           <Nav />

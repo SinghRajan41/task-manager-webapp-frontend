@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import TaskItem from "./TaskItem";
 import Axios from "axios";
 import {Link} from "react-router-dom"
-
+import "./TaskList.css";
 function TaskList(props)
 {
     const [arr, setArr] = useState([]);
@@ -24,13 +24,18 @@ function TaskList(props)
         );
     };
     return(
-        <div>
-            <Link to="/create-task"> 
-                <button class="btn btn-success">Add Task</button>
-            </Link>
-            <table class="table">
+        <div class = "task-list-container">
+            <div id = "create-task-container">
+                <Link to="/create-task"> 
+                    <button id = "create-task-button">CREATE NEW TASK</button>
+                </Link>
+            </div>
+            <div>
+                {/* <table class="table">
+                    {ListTasks()}
+                </table> */}
                 {ListTasks()}
-            </table>
+            </div>
         </div>
 
     );

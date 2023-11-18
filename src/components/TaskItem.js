@@ -1,26 +1,96 @@
-import {Link} from "react-router-dom";
-import Axios from "axios";
+// import { Link } from "react-router-dom";
+// import Axios from "axios";
+// import "./TaskItem.css";
+// function TaskItem(props) {
+//     const date = new Date(props.obj.date);
+//     const handleClick = () => {
+//         Axios.delete("http://localhost:4000/delete-task/" + props.obj._id)
+//             .then((res) => {
+//                 if (res.status === 200) {
+//                     alert("Task removed from agenda");
+//                 }
+//             })
+//             .catch(err => alert(err));
+//     };
+//     const values = ["High", "Medium", "Low"];
+//     return (
+//         <div class="task-item-container">
 
-function TaskItem(props)
-{
+
+//             <div class="task-item-desc-container">
+//                 {props.obj.taskName}
+//                 <br></br>
+//                 Due : {date.toLocaleDateString('en-US')}
+//                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+//                 Priority : {values[props.obj.priority]}
+//             </div>
+
+//             <div class="task-item-button-container">
+//                 <button class="task-item-button" id="task-item-edit-button">
+//                     <Link to={"/update-task/" + props.obj._id}>Edit Task</Link>
+//                 </button>
+//                 <button class="task-item-button" onClick={handleClick} id="task-item-done-button">Mark As Done</button>
+//                 <button class="task-item-button" onClick={handleClick} id="task-item-delete-button">Delete</button>
+//             </div>
+
+
+
+//         </div>
+//     );
+// }
+
+// export default TaskItem;
+
+
+
+
+
+
+
+
+
+
+
+import { Link } from "react-router-dom";
+import Axios from "axios";
+import "./TaskItem.css";
+function TaskItem(props) {
     const date = new Date(props.obj.date);
     const handleClick = () => {
         Axios.delete("http://localhost:4000/delete-task/" + props.obj._id)
-        .then((res) => {
-            if(res.status === 200) {
-                alert("Task removed from agenda");
-            }
-        })
-        .catch(err => alert(err));
+            .then((res) => {
+                if (res.status === 200) {
+                    alert("Task removed from agenda");
+                }
+            })
+            .catch(err => alert(err));
     };
+    const values = ["High", "Medium", "Low"];
     return (
-        <div>
-            {props.obj.userId + " " + props.obj.taskName + " " + date.toLocaleDateString('en-US') + " " + props.obj.priority + " " + (props.obj.setReminder ? 1 : 0)}
-            <button class="ms-5 btn">
-                <Link to={"/update-task/" + props.obj._id}>Edit</Link>
-            </button>
-            <button class="btn btn-success" onClick={handleClick}>Completed</button>
-            <button class="btn btn-danger" onClick={handleClick}>Delete</button>
+        <div id="ti1">
+
+
+            <div id = "ti2">
+                <div id = "ti8">
+                    <p>{props.obj.taskName}</p>
+                </div> 
+                <div id = "ti9">
+                    Due : {date.toLocaleDateString('en-US')}
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Priority : {values[props.obj.priority]}
+                </div>
+            </div>
+
+            <div id = "ti3">
+                <button id = "ti7" >
+                    <Link id="ti4" to={"/update-task/" + props.obj._id}>Edit Task</Link>
+                </button>
+                <button id="ti5" onClick={handleClick} >Mark As Done</button>
+                <button id="ti6" onClick={handleClick} >Delete</button>
+            </div>
+
+
+
         </div>
     );
 }
