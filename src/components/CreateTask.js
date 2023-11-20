@@ -12,7 +12,7 @@ function CreateTask(props)
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        const data = {userId: props.userId, taskName: arr[0], date: new Date(arr[1]), priority: arr[2], setReminder: arr[3]};
+        const data = {userId: props.userId, taskName: arr[0], date: new Date(arr[1]), priority: arr[2], setReminder: arr[3], marked: false};
         console.log(data);
         Axios.post("http://localhost:4000/add-task", data)
         .then((res) => {

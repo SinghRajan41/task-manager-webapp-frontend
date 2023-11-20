@@ -54,6 +54,7 @@
 import { Link } from "react-router-dom";
 import Axios from "axios";
 import "./TaskItem.css";
+import MarkButton from "./MarkButton";
 function TaskItem(props) {
     const date = new Date(props.obj.date);
     const handleClick = () => {
@@ -65,6 +66,17 @@ function TaskItem(props) {
             })
             .catch(err => alert(err));
     };
+    const toggleMarked = () => {
+        if(props.obj.marked === false) props.obj.marked = true;
+        else props.obj.marked = false;
+
+        Axios.put("http://localhost:4000/update-task/" + props.obj._id, props.obj)
+        .then((res) => {
+            if(res.status === 200) alert("Task status updated");
+            else Promise.reject();
+        })
+        .catch(res => alert(res));
+    }
     const values = ["High", "Medium", "Low"];
     return (
         <div id="ti1">
@@ -85,7 +97,7 @@ function TaskItem(props) {
                 <button id = "ti7" >
                     <Link id="ti4" to={"/update-task/" + props.obj._id}>Edit Task</Link>
                 </button>
-                <button id="ti5" onClick={handleClick} >Mark As Done</button>
+                <button id="ti5" onClick={toggleMarked} ><MarkButton marked={props.obj.marked}/></button>
                 <button id="ti6" onClick={handleClick} >Delete</button>
             </div>
 

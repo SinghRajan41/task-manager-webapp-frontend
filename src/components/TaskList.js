@@ -27,13 +27,10 @@ function TaskList(props)
         <div class = "task-list-container">
             <div id = "create-task-container">
                 <Link to="/create-task"> 
-                    <button id = "create-task-button">CREATE NEW TASK</button>
+                    <button id = "create-task-button">NEW TASK</button>
                 </Link>
             </div>
             <div>
-                {/* <table class="table">
-                    {ListTasks()}
-                </table> */}
                 {ListTasks()}
             </div>
         </div>

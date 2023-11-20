@@ -9,7 +9,7 @@
   top: 20px;
   height: 870px;
   width: 1300px;
-  background-image: url('https://elements-cover-images-0.imgix.net/ea0990ce-ef84-4f13-b198-7eb7947cc823?auto=compress&crop=edges&fit=crop&fm=jpeg&h=630&w=1200&s=bdf4800b65c807cb3cfc9fbe42776c46');
+  background-image: linear-gradient(105deg, #3586b2 50%, #5eaed8 50%, #a2d9e9);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -28,7 +28,7 @@
   top: 20px;
   height: 870px;
   width: 1300px;
-  background-image: url('https://elements-cover-images-0.imgix.net/ea0990ce-ef84-4f13-b198-7eb7947cc823?auto=compress&crop=edges&fit=crop&fm=jpeg&h=630&w=1200&s=bdf4800b65c807cb3cfc9fbe42776c46');
+  background-image: linear-gradient(105deg, #3586b2 50%, #5eaed8 50%, #a2d9e9);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -39,7 +39,7 @@
   color: white;
   display: flex;
   justify-content: center;
-  background-color: rgba(88, 89, 90, 0.745);
+  background-color:rgba(19, 114, 165, 0.7);
   border-radius: 15px;
 }
 
@@ -48,7 +48,7 @@
   color: white;
   display: flex;
   justify-content: center;
-  background-color: rgba(88, 89, 90, 0.93);
+  background-color: rgba(0, 85, 131,0.8);
   border-radius: 15px;
   border-color: blue;
   transition : 0.6s  ease-in-out;
