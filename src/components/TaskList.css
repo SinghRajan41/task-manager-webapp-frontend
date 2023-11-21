@@ -9,19 +9,13 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    position:relative;
 }
 
 #create-task-container 
 {
     display : flex;
-    justify-content : center;
+    justify-content : left;
     margin-bottom : 20px;
-    position:fixed;
-    bottom  : 0px;
-    left :320px;
-    bottom : 11px;
-    z-index : 2;
 }
 
 
