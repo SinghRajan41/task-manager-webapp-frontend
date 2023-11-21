@@ -1,0 +1,11 @@
+.aa1 {
+  border-color: black;
+  border-style: groove;
+  border-width: 2px;
+  padding-left: 20px;
+  padding-right: 40px;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  background: linear-gradient(105deg, #d988b9, #b0578d 50%, #7071e8 50%);
+}

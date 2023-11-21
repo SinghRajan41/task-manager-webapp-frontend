@@ -21,48 +21,69 @@ function SignUp(props) {
         }
       })
       .catch((err) => alert(err));
-  };
+  }
   return (
-    <div onMouseOver={() => setIsHovered(true)} onMouseOut={() => setIsHovered(false)} class="outer-container">
+    <div
+      onMouseOver={() => setIsHovered(true)}
+      onMouseOut={() => setIsHovered(false)}
+      class="outer-container"
+    >
+      <div
+        onMouseOver={() => setIsInputBoxHovered(true)}
+        onMouseOut={() => setIsInputBoxHovered(false)}
+        class="input-section"
+      >
+        <form onSubmit={handleSubmit}>
+          <h1 style={{ fontFamily: "fanatsy" }}>TASK MANAGER</h1>
 
-
-      <div onMouseOver={() => setIsInputBoxHovered(true)} onMouseOut={() => setIsInputBoxHovered(false)} class="input-section">
-
-        <form onSubmit={handleSubmit} >
-          <h1>TASK MANAGER</h1>
-          
           <br></br>
           <br></br>
           <table>
             <tr>
-              <td><label for="name"  >
-                USER ID
-              </label></td>
-              <td><input type="text" id="userId" onChange={(e) => setName(e.target.value)} class = "input-feilds"/></td>
-            </tr>
-            <tr>
-              <td><label for="pwd" >
-                Password
-              </label>
+              <td>
+                <label for="name" style={{ fontSize: "25px" }}>
+                  &nbsp;USER ID &nbsp;:
+                </label>
               </td>
-              <td><input type="password" id="password" onChange={(e) => setPassword(e.target.value)} class = "input-feilds"/></td>
+              <td>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <input
+                  type="text"
+                  id="userId"
+                  onChange={(e) => setName(e.target.value)}
+                  class="input-feilds"
+                />
+              </td>
+            </tr>
+            <br></br>
+            <tr>
+              <td>
+                <label for="pwd" style={{ fontSize: "25px" }}>
+                  Password :
+                </label>
+              </td>
+              <td>
+                <input
+                  type="password"
+                  id="password"
+                  onChange={(e) => setPassword(e.target.value)}
+                  class="input-feilds"
+                  style={{ marginLeft: "20px" }}
+                />
+              </td>
             </tr>
             <br></br>
             <br></br>
           </table>
-          <input type="submit" value="CREATE  USER" id = "submit-button" />
+          <input type="submit" value="CREATE  USER" id="submit-button" />
         </form>
-
       </div>
 
-
-      <div class = "login-section" >
+      <div class="login-section">
         Already have an account? Click <Link to="/login">here</Link> to log in
       </div>
-
     </div>
   );
 }
 
 export default SignUp;
-

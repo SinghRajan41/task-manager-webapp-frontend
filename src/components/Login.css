@@ -1,6 +1,6 @@
-
-body, html {
-  background: linear-gradient(to right, white, #adadff); 
+body,
+html {
+  background: linear-gradient(to right, white, #adadff);
   color: #ffffff;
   margin: 0;
   padding: 0;
@@ -23,7 +23,7 @@ body, html {
   background-position: center;
   background-repeat: no-repeat;
   opacity: 0.95;
-  color:white;
+  color: white;
 }
 
 .login-container:hover {
@@ -63,36 +63,34 @@ body, html {
   padding: 40px;
   margin: 60px;
   border-radius: 20px;
-  background-color: rgba(0, 85, 131,0.8);
+  background-color: rgba(0, 85, 131, 0.8);
   display: flex;
   justify-content: center;
-  transition : 0.6s  ease-in-out;
+  transition: 0.6s ease-in-out;
 }
 
-.login-input-section label 
-{
-  font-size:18px;
-  text-transform:capitalize;
-  color:black;
+.login-input-section label {
+  font-size: 18px;
+  text-transform: capitalize;
+  color: black;
 }
 .login-input-feilds {
   background-color: #ffffff;
-  width:300px;
-  height:40px;
-  border-radius:5px;
-  margin:20px;
+  width: 300px;
+  height: 40px;
+  border-radius: 5px;
+  margin: 20px;
 }
 
 .login-input-feilds:focus {
   background-color: #50ec91;
-  width:300px;
-  height:40px;
-  border-radius:5px;
-  margin:20px;
-  color:white;
-  transition : 0.6s  ease-in-out;
+  width: 300px;
+  height: 40px;
+  border-radius: 5px;
+  margin: 20px;
+  color: black;
+  transition: 0.6s ease-in-out;
 }
-
 
 #login-button {
   background-color: #2ecc71;
@@ -103,24 +101,23 @@ body, html {
   cursor: pointer;
   font-size: 16px;
   transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
-  margin-left:100px;
+  margin-left: 100px;
 }
 
 #login-button:hover {
   background-color: #27ae60;
-  margin-left:100px;
+  margin-left: 100px;
 }
 
 #login-button:active {
   background-color: #1f8b4c;
   transform: scale(0.95);
-  margin-left:100px;
+  margin-left: 100px;
 }
 
-.signup-redirect
-{
-  display:flex;
+.signup-redirect {
+  display: flex;
   justify-content: center;
-  font-size:20px;
-  color : white;
+  font-size: 20px;
+  color: white;
 }
